@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneDial">
+
+    <TextView
+        android:id="@+id/dial"
+        android:layout_marginTop="80dp"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/one_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="@string/_1"
+        android:textSize="17sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:layout_constraintRight_toLeftOf="@id/two_btn"
+        app:layout_constraintTop_toBottomOf="@id/dial"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/two_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/_2"
+        android:textSize="17sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dial"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/three_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:text="@string/_3"
+        android:textSize="17sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:layout_constraintLeft_toRightOf="@id/two_btn"
+        app:layout_constraintTop_toBottomOf="@id/dial"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/four_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="@string/_4"
+        android:textSize="17sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:layout_constraintRight_toLeftOf="@id/five_btn"
+        app:layout_constraintTop_toBottomOf="@id/one_btn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/five_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/_5"
+        android:textSize="17sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/two_btn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/six_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:text="@string/_6"
+        android:textSize="17sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:layout_constraintLeft_toRightOf="@id/five_btn"
+        app:layout_constraintTop_toBottomOf="@id/three_btn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/seven_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="@string/_7"
+        android:textSize="17sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:layout_constraintRight_toLeftOf="@id/eight_btn"
+        app:layout_constraintTop_toBottomOf="@id/four_btn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/eight_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/_8"
+        android:textSize="17sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/five_btn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nine_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:text="@string/_9"
+        android:textSize="17sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:layout_constraintLeft_toRightOf="@id/eight_btn"
+        app:layout_constraintTop_toBottomOf="@id/six_btn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/star_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="@string/_star"
+        android:textSize="17sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:layout_constraintRight_toLeftOf="@id/zero_btn"
+        app:layout_constraintTop_toBottomOf="@id/seven_btn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/zero_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/_0"
+        android:textSize="17sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eight_btn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/delete_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:text="@string/_delete"
+        android:textSize="17sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:layout_constraintLeft_toRightOf="@id/zero_btn"
+        app:layout_constraintTop_toBottomOf="@id/nine_btn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/call_btn"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="@drawable/background_call"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/zero_btn"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:contentDescription="@string/todo"
+        android:background="@drawable/ic_call"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/call_btn"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
